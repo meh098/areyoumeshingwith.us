@@ -4,10 +4,6 @@
 {{ if not $faqData }}
   <div class="alert alert-warning">FAQ data not found: {{ $faqFile }}</div>
 {{ else }}
-  {{ if not ($.Page.Scratch.Get "bootstrap-js-loaded") }}
-    {{ $.Page.Scratch.Set "bootstrap-js-loaded" true }}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  {{ end }}
   {{ $categories := slice }}
   {{ range $faqData }}
     {{ if not (in $categories .category) }}
@@ -66,25 +62,3 @@
   {{ end }}
 {{ end }}
 
-<script>
-(function() {
-  function expandAccordionFromHash() {
-    const hash = window.location.hash.slice(1);
-    if (!hash) return;
-    const item = document.getElementById(hash);
-    if (!item || !item.classList.contains('accordion-item')) return;
-    const collapse = item.querySelector('.accordion-collapse');
-    if (!collapse) return;
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
-    if (!collapse.classList.contains('show')) {
-      bsCollapse.show();
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', expandAccordionFromHash);
-  } else {
-    expandAccordionFromHash();
-  }
-  window.addEventListener('hashchange', expandAccordionFromHash);
-})();
-</script>
