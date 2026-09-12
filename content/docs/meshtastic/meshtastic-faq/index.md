@@ -6,7 +6,7 @@ date: 2026-09-12T12:00:00Z
 draft: false
 description: "Frequently asked questions regarding Meshtastic."
 noindex: false
-nav_weight: 10
+nav_weight: 1
 nav_icon:
   vendor: bs
   name: question-circle
