@@ -1,7 +1,7 @@
 ---
 title: "Meshtastic FAQ"
 linkTitle: "Meshtastic FAQ"
-slug: flmeshfaq
+slug: messhtasticfaq
 date: 2026-09-12T12:00:00Z
 draft: false
 description: "Frequently asked questions regarding Meshtastic."

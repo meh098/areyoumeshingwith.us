@@ -1,7 +1,7 @@
 ---
 title: "MeshCore FAQ"
-linkTitle: "MeshtCore FAQ"
-slug: flmeshfaq
+linkTitle: "MeshCore FAQ"
+slug: meshcorefaq
 date: 2026-09-12T12:00:00Z
 draft: false
 description: "Frequently asked questions regarding MeshCore."
