@@ -1,5 +1,5 @@
 ---
-title: "Meshcore FAQ"
+title: "MeshCore FAQ"
 linkTitle: "MeshtCore FAQ"
 slug: flmeshfaq
 date: 2026-09-12T12:00:00Z
