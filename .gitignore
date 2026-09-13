@@ -43,3 +43,6 @@ tools/mapgen/bin/
 
 # Local agent instructions
 AGENTS.md
+
+# stupid mac stuff
+.DS_Store
