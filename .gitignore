@@ -42,4 +42,4 @@ resources/
 tools/mapgen/bin/
 
 # Local agent instructions
-AGENTS.md
+AGENTS.md.DS_Store
